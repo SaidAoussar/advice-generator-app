@@ -1,0 +1,117 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: #cee3e9;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #1f2632;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 343px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+}
+
+.p-all {
+  padding: 44px 24px 70px;
+}
+
+.card {
+  background-color: #313a49;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card__title {
+  color: #52ffa8;
+  margin-bottom: 36px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.card__quote {
+  font-size: 28px;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.card__divider div {
+  height: 16px;
+  background-image: url(./../../images/pattern-divider-mobile.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .card__divider div {
+    background-image: url(./../../images/pattern-divider-desktop.svg);
+  }
+}
+
+.card__btn {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: #52ffa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  border-radius: 50%;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  bottom: 0%;
+}
+
+.card__btn:hover {
+  background-color: #53ffab;
+  -webkit-box-shadow: 1px 1px 26px 5px #53ffab;
+          box-shadow: 1px 1px 26px 5px #53ffab;
+}
+
+.card__btn .dice-icon {
+  margin: auto;
+  height: 24px;
+  width: 24px;
+  background-image: url(./../../images/icon-dice.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*# sourceMappingURL=style.css.map */
