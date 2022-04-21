@@ -22,12 +22,12 @@
   &__divider {
     div {
       height: 16px;
-      background-image: url(./../../images/pattern-divider-mobile.svg);
+      background-image: url(./../images/pattern-divider-mobile.svg);
       background-size: cover;
       background-position: center;
 
       @include breakpoint-up(md) {
-        background-image: url(./../../images/pattern-divider-desktop.svg);
+        background-image: url(./../images/pattern-divider-desktop.svg);
       }
     }
   }
@@ -52,7 +52,7 @@
       margin: auto;
       height: 24px;
       width: 24px;
-      background-image: url(./../../images/icon-dice.svg);
+      background-image: url(./../images/icon-dice.svg);
       background-repeat: no-repeat;
       background-position: center center;
     }
