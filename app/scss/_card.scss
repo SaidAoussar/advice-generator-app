@@ -1,0 +1,60 @@
+.card {
+  background-color: #313a49;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+
+  &__title {
+    color: $neonGreen;
+    margin-bottom: 36px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__quote {
+    font-size: 28px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__divider {
+    div {
+      height: 16px;
+      background-image: url(./../../images/pattern-divider-mobile.svg);
+      background-size: cover;
+      background-position: center;
+
+      @include breakpoint-up(md) {
+        background-image: url(./../../images/pattern-divider-desktop.svg);
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: $neonGreen;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    bottom: 0%;
+
+    &:hover {
+      background-color: #53ffab;
+      box-shadow: 1px 1px 26px 5px #53ffab;
+    }
+    .dice-icon {
+      margin: auto;
+      height: 24px;
+      width: 24px;
+      background-image: url(./../../images/icon-dice.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
