@@ -1,0 +1,41 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: $lightCyan;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: $darkBlue;
+}
+h1 {
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 343px;
+  margin: 0 auto;
+
+  @include breakpoint-up(md) {
+    max-width: 500px;
+  }
+}
+
+.p-all {
+  padding: 44px 24px 70px;
+}
